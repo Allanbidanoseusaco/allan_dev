@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos Corporativo</title>
+    <link rel="stylesheet" href="style_site.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+            <img class="logo" src="./content.png" alt="Logo">
+            <h1>Ramais Corporativos</h1>
+        </div>
+        <div class="nav_right">
+            <div class="search-box">
+                <i class="fa fa-search icon-lupa" aria-hidden="true"></i>
+                <!-- Campo de pesquisa com evento oninput para filtragem -->
+                <input type="text" class="entrada" placeholder="Pesquisar" oninput="filtrarRamais()">
+            </div>    
+        </div>
+        <div>
+            <button class="top-right-button" onclick="abrirModal()"> 
+                <img class="adicao_buttom" src="mais.png" alt="Imagem no botão" style="width:20px; height:20px;">
+            </button>
+        </div>
+    </nav>
+    <div class="titulo_container">
+        <h1>Contatos Corporativo</h1>
+    </div>    
+    <table id="tabelaRamais">
+        <thead>
+            <tr>
+                <th class="th_esq">Nome</th>
+                <th>Ramal</th>
+                <th>Setor</th>
+                <th>Email</th>
+                <th class="th_dir">Ação</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">×</span>
+            <h3>Adicionar/Editar Ramal</h3>
+            <div class="form-input">
+                <input placeholder="Nome e Sobrenome" class="input_nome" type="text" id="nome">
+            </div>
+            <div class="form-input">
+                <input placeholder="Ramal Corporativo" class="input_ramal" type="text" id="ramal">
+            </div>
+            <div class="form-input">
+                <input placeholder="Setor" class="input_setor" type="text" id="setor">
+            </div>
+            <div class="form-input">
+                <input placeholder="Email Corporativo" class="input_email" type="email" id="email">
+            </div>
+            <button class="salvar_buttom" onclick="adicionarRamal()">Salvar</button>
+            <button class="atualizar_buttom" style="display: none;" onclick="atualizarRamal()">Atualizar</button>
+        </div>
+    </div>
+    <script src="./function.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Dank Sociedade De Crédito S/A</h3>
+        <p>Sua Jornada Começa Aqui</p>
+        <div class="social-media">
+            <a href="https://dankbanco.sharepoint.com/" target=”_blank” aria-label="Facebook">Intranet</a>
+            <a href="#" target="_blank" aria-label="Twitter">Facebook</a>
+            <a href="https://www.instagram.com/dankbankoficial/" target="_blank" aria-label="Instagram">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Departamento De Tecnologia Dankbank. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, SegoeUI-Regular-final, Segoe UI, "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08);
+    position: fixed;
+    top:0;
+    width:100%
+}
+
+.nav_left {
+    display: flex; /* Permite alinhar logo e título lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: row;
+    padding: 9px;
+}
+
+.logo {
+    width: 85px;
+    margin-right: 15px; /* Ajuste para um pequeno espaço entre logo e título */
+}
+
+.nav_left h1 {
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, SegoeUI-Regular-final, Segoe UI, "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Tahoma, Helvetica, Arial, sans-serif;
+    color: #2d2f31;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.search-box {
+    position: relative;
+    right:40px;
+}
+
+.entrada {
+    padding: 12px 35px;
+    border-radius: 100rem;
+    border: none;
+    width: 300px;
+    align-self: flex-start;
+    border: 1px solid #2d2f31
+}
+
+.icon-lupa {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.top-right-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.top-right-button:hover{
+    background-color: #1e2d61;
+}
+.titulo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 125px;    
+}
+
+.titulo_container h1 {
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, SegoeUI-Regular-final, Segoe UI, "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    color: #1E2D61; /* Um tom de azul que combina com o restante do design */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margem */
+    padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.titulo_container {
+    border-bottom: 2px solid #1E2D61; /* Adiciona uma borda inferior */
+    padding-bottom: 20px; /* Espaço adicional abaixo do título */
+}
+
+tr:hover{
+    background-color: #673DE6;
+    color: white;
+
+}
+
+tr{
+    background-color: white
+}
+adicao_buttom:hover{
+    background-color: #673DE6;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    
+
+    
+}
+
+table th, table td {
+    border: 0.1px solid #f8f8f800;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+table th {
+    background-color:  #1E2D61;
+    color: white;
+    height: 35px; 
+}
+table .th_esq{
+    border-top-left-radius: 20px
+}
+table .th_dir{
+    border-top-right-radius: 20px
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    
+    background-color: #fefefe;
+    margin: 8% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; 
+}
+
+.fechar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.input_nome, .input_ramal, .input_setor, .input_email {
+    
+    width: 280px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.salvar_buttom {
+    background-color: #008CBA; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.salvar_buttom:hover {
+    background-color: #005f73; /* Azul escuro ao passar o mouse */
+}
+
+
+
+.atualizar_buttom {
+    background-color: #008CBA; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.atualizar_buttom:hover {
+    background-color: #005f73; /* Azul escuro ao passar o mouse */
+}
+
+
+.editar_buttom{
+    background-color: #4CAF50; /* Verde para editar */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 5px; /* Espaçamento entre os botões */
+}
+.deletar_buttom {
+    background-color: #ff2146; /* Verde para editar */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 5px; /* Espaçamento entre os botões */
+}
+
+.editar_buttom:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+.deletar_buttom {
+    background-color: #f44336; /* Vermelho para deletar */
+}
+
+.deletar_buttom:hover {
+    background-color: #da190b; /* Cor de fundo ao passar o mouse */
+}
+
+.editar_buttom:active, .deletar_buttom:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+.icon-lupa{
+    width: 28px;
+    color: #1E2D61;
+}
+
+
+
+
+
+.footer {
+    background-image: url('./footer_dank.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o rodapé */
+    background-position: center; /* Centraliza a imagem */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 2000px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f39c12; /* Muda a cor ao passar o mouse */
+}
+
+.footer-bottom {
+    border-top: 1px solid #202020; /* Linha superior para separar o conteúdo */
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
